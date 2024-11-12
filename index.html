@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        /* Colores personalizados */
+        :root {
+            --verde-agua: #A0D9D9;
+            --coral: #FF6B6B;
+            --texto-oscuro: #333333;
+        }
+
+        /* Estilos de fondo y colores */
+        body {
+            background-color: #F7F9F9;
+            color: var(--texto-oscuro);
+        }
+
+        .navbar, footer {
+            background-color: var(--coral);
+        }
+
+        .navbar-brand, .nav-link, footer p {
+            color: #ffffff !important;
+        }
+
+        .banner {
+            background-color: var(--verde-agua);
+            color: var(--texto-oscuro);
+        }
+
+        #game-description, #video, #more-info {
+            color: var(--texto-oscuro);
+        }
+
+        #gallery {
+            background-color: var(--verde-agua);
+        }
+
+        .btn-custom {
+            background-color: var(--coral);
+            color: #ffffff;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: #FF4C4C;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Monopoly</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#game-description">El Juego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#video">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#more-info">Más Información</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <header class="banner text-center py-5">
+        <div class="container">
+            <h1>Bienvenido a Monopoly</h1>
+            <p class="lead">¡Compra, vende y construye para ganar!</p>
+        </div>
+    </header>
+
+    <!-- Sección de descripción del juego -->
+    <section id="game-description" class="py-5">
+        <div class="container">
+            <h2 class="text-center">¿Qué es Monopoly?</h2>
+            <p>Monopoly es un juego de mesa clásico donde los jugadores compran, venden e intercambian propiedades para convertirse en los más ricos del tablero. Los jugadores avanzan tirando los dados y comprando propiedades en las que caen. Para ganar, debes llevar a la bancarrota a tus oponentes.</p>
+            <ul>
+                <li><strong>Jugadores:</strong> 2 a 8</li>
+                <li><strong>Duración:</strong> 1 a 3 horas</li>
+                <li><strong>Objetivo:</strong> Ser el último jugador con dinero cuando los demás han quebrado.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- Chatbot -->
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="proyectomonopoly-441403"
+  agent-id="4639c388-8266-43c3-93d0-acf2a4f39ec6"
+  language-code="es"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="Mr. Milburn Pennybags">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
+
+
+    <!-- Galería de imágenes -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Galería de Imágenes</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="img/descargar (1).jfif" class="img-fluid rounded" alt="Tablero de Monopoly">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="img/descargar.jfif" class="img-fluid rounded" alt="Piezas de Monopoly">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="img/monopoly-historia.png" class="img-fluid rounded" alt="Jugadores jugando Monopoly">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video de YouTube -->
+    <section id="video" class="py-5">
+        <div class="container text-center">
+            <h2>Video sobre Monopoly</h2>
+            <p>Aprende a jugar en pocos minutos.</p>
+            <div class="ratio ratio-16x9">
+                <iframe width="885" height="498" src="https://www.youtube.com/embed/ovK9TE3rArw" title="COMO JUGAR MONOPOLY | Todas las reglas que no te sabías" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enlaces adicionales -->
+    <section id="more-info" class="py-5">
+        <div class="container text-center">
+            <h2>Más Información</h2>
+            <p>Visita los siguientes enlaces para obtener más detalles sobre el juego Monopoly:</p>
+            <ul class="list-unstyled">
+                <li><a href="https://shop.hasbro.com/en-us/monopoly" target="_blank" class="btn btn-custom my-2">Sitio Oficial de Monopoly</a></li>
+                <li><a href="https://es.wikipedia.org/wiki/Monopoly" target="_blank" class="btn btn-custom my-2">Wikipedia de Monopoly</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2024 Monopoly. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
